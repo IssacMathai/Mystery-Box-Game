@@ -1,6 +1,7 @@
 from tkinter import *
 from functools import partial   # To prevent unwanted windows
 import random
+import re
 
 
 class Start:
@@ -232,7 +233,7 @@ class Game:
 
         self.help_button = Button(self.help_export_frame, text="Help / Rules",
                                   font="Arial 15 bold",
-                                  bg="#808080", fg="white")
+                                  bg="#808080", fg="white", command=lambda: self.help())
         self.help_button.grid(row=0, column=0, padx=2)
 
         self.stats_button = Button(self.help_export_frame, text="Game Stats...",
@@ -338,6 +339,9 @@ class Game:
 
     def to_stats(self, game_history, game_stats):
         GameStats(self, game_history, game_stats)
+
+    def help(self):
+        Help(self)
 
     def to_quit(self):
         root.destroy()
