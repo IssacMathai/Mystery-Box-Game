@@ -192,7 +192,7 @@ class Game:
         self.box_frame = Frame(self.game_frame)
         self.box_frame.grid(row=2, pady=10)
 
-        photo = PhotoImage(file="src/assets\question.gif")
+        photo = PhotoImage(file="Support Files\question.gif")
 
         self.prize1_label = Label(self.box_frame, image=photo, padx=10, pady=10)
         self.prize1_label.photo = photo
@@ -258,9 +258,9 @@ class Game:
 
         # Allows photo to change depending on stakes.
         # Lead not in the list as that is always 0
-        copper = ["src/assets\copper_low.gif", "src/assets\copper_med.gif", "src/assets\copper_high.gif"]
-        silver = ["src/assets\silver_low.gif", "src/assets\silver_med.gif", "src/assets\silver_high.gif"]
-        gold = ["src/assets\gold_low.gif", "src/assets\gold_med.gif", "src/assets\gold_high.gif"]
+        copper = ["Support Files\copper_low.gif", "Support Files\copper_med.gif", "Support Files\copper_high.gif"]
+        silver = ["Support Files\silver_low.gif", "Support Files\silver_med.gif", "Support Files\silver_high.gif"]
+        gold = ["Support Files\gold_low.gif", "Support Files\gold_med.gif", "Support Files\gold_high.gif"]
 
         for item in range(0, 3):
             prize_num = random.randint(1, 100)
@@ -279,7 +279,7 @@ class Game:
                 prize_list = "copper (${})".format(1 * stakes_multiplier)
                 round_winnings += stakes_multiplier
             else:
-                prize = PhotoImage(file="src/assets\lead.gif")
+                prize = PhotoImage(file="Support Files\lead.gif")
                 prize_list = "lead ($0)"
 
             prizes.append(prize)
