@@ -15,6 +15,6 @@ The plan for writing the code was to let each GUI window has its own class. This
 
 After creating this, I moved on to creating MeasurementConverter, which was my assessed python tkinter application. I received an Excellence grade for my 'iterative improvement' (planning, documenting changes) and a Merit grade for the program overall.
 
-Next time, I would make the game more fair and make it possible to win while also allowing the player to put more money in. This game was based around an 'anti-gambling' theme so the it was intentionally designed to be unfair to dissuade players from practicing gambling in real life, so this caused some limitations.
+Next time, I would make the game more fair and make it possible to win while also allowing the player to put more money in. This game was based around an 'anti-gambling' theme and so it was intentionally designed to be unfair to dissuade players from practicing gambling in real life, leading to some limitations.
 
 To play the game, run game.exe which is located in the src folder.
