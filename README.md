@@ -1,4 +1,5 @@
-MysteryBoxGame was created for my Digital Technologies class while in Year 13 of high school. We had 3 weeks worth of classes to create this game with the purpose of learning more advanced python as well as how to use tkinter to create GUI windows with text and images.
+# Mystery Box Game
+Mystery Box Game was created for my Digital Technologies class while in Year 13 of high school. We had 3 weeks worth of classes to create this game with the purpose of learning more advanced python as well as how to use tkinter to create GUI windows with text and images.
 
 The plan for writing the code was to let each GUI window has its own class. This simple structure helped with readability and bug fixing as I immediately knew which section of the code to look at.
 
